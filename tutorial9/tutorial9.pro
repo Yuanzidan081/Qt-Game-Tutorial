@@ -1,5 +1,4 @@
-QT       += core gui \
-            multimedia
+QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,41 +10,14 @@ CONFIG += c++11
 
 SOURCES += \
     Bullet.cpp \
-    Enemy.cpp \
     Game.cpp \
-    Health.cpp \
-    Player.cpp \
-    Score.cpp \
+    Tower.cpp \
     main.cpp
 
 HEADERS += \
     Bullet.h \
-    Enemy.h \
     Game.h \
-    Health.h \
-    Player.h \
-    Score.h
-
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
-
-
-SOURCES += \
-    Bullet.cpp \
-    Enemy.cpp \
-    Game.cpp \
-    Player.cpp \
-    Score.cpp \
-    main.cpp
-
-HEADERS += \
-    Bullet.h \
-    Enemy.h \
-    Game.h \
-    Player.h \
-    Score.h
+    Tower.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
